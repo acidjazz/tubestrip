@@ -14,7 +14,7 @@
         "ext-json": "*",
         "php": "^7.4",
         "illuminate/support": "7.*",
-        "guzzlehttp/guzzle": "^7.0"
+        "guzzlehttp/guzzle": "6.* || 7.*"
     },
     "autoload": {
         "classmap": [
