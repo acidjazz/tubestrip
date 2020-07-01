@@ -3,6 +3,9 @@
     "description": "YouTube Crawler",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "Laravel", "YouTube", "Guzzle", "scrape", "crawl"
+    ],
     "authors": [
         {
             "name": "Kevin Olson",
