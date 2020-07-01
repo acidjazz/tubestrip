@@ -13,8 +13,8 @@
 > early development
 
 ## Features
-* Search youtube
-* Get a video title, description, view count, and published date
+* Search Youtube
+* Get a video title, description, view count, and published date from a Youtube ID
 
 
 ## Installation
@@ -43,3 +43,24 @@ array:20 [▼
 ...
 ```
 
+```php
+<?php
+use acidjazz\tubestrip\TubeStrip;
+
+$ts = new TubeStrip();
+dump($ts->get('r_cYOi3pnhA');
+```
+
+```
+{#1588 ▼
+  +"title": "GETV: ANSI Art for the Masses"
+  +"description": """
+    Back before there was the Internet, early caveman dialed into computer bulletin board systems or BBSes to get their online fix. Many of these boards distinguish ▶
+    
+    Originally posted:
+    http://www.geekentertainment.tv/2008/...
+    """
+  +"viewCount": 55585
+  +"date": "Feb 9 2008"
+}
+```
