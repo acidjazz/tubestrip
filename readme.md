@@ -5,10 +5,9 @@
 
 > Simple youtube scraper
 
-[![Latest Stable Version](https://poser.pugx.org/phpunit/phpunit/v)](//packagist.org/packages/phpunit/phpunit)
-[![Total Downloads](https://poser.pugx.org/phpunit/phpunit/downloads)](//packagist.org/packages/phpunit/phpunit)
-[![License](https://poser.pugx.org/acidjazz/tubestrip/license)](//packagist.org/packages/acidjazz/tubestrip)
 [![Version](https://poser.pugx.org/acidjazz/tubestrip/version)](//packagist.org/packages/acidjazz/tubestrip)
+[![Total Downloads](https://poser.pugx.org/acidjazz/tubestrip/downloads)](//packagist.org/packages/acidjazz/tubestrip)
+[![License](https://poser.pugx.org/acidjazz/tubestrip/license)](//packagist.org/packages/acidjazz/tubestrip)
 [![codecov](https://codecov.io/gh/acidjazz/tubestrip/branch/master/graph/badge.svg)](https://codecov.io/gh/acidjazz/tubestrip)
 
 > early development
