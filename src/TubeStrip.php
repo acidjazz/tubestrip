@@ -42,7 +42,7 @@ class TubeStrip
         $response = Http::withHeaders($this->forceJson ? [
             'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
         ] : [
-            'User-Agent' => 'tubestrip',
+            'User-Agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
         ])
             ->get('https://www.youtube.com/watch?v=' . $videoId);
 
@@ -128,7 +128,7 @@ class TubeStrip
         $response = Http::withHeaders($this->forceJson ? [
             'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
         ] : [
-            'User-Agent' => 'tubestrip',
+            'User-Agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
         ])
             ->get('https://www.youtube.com/results?search_query=' . urlencode($term));
         $html = $response->body();

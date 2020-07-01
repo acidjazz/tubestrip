@@ -2,7 +2,7 @@
 <phpunit bootstrap="vendor/autoload.php" colors="true" verbose="true">
     <testsuites>
         <testsuite name="TubeStrip Test Suite">
-            <directory>tests</directory>
+            <directory suffix="php">./tests/</directory>
         </testsuite>
     </testsuites>
     <filter>

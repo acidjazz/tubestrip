@@ -1,8 +1,8 @@
 <?php
+namespace acidjazz\tubestrip\Tests;
 
 use acidjazz\tubestrip\TubeStrip;
 use Orchestra\Testbench\TestCase;
-
 
 class TubeStripTest extends TestCase
 {
@@ -24,6 +24,18 @@ DESC,
       "date" => "Feb 9 2008",
     ];
 
+    CONST GET_RESULT_HTML = [
+        "title" => "GETV: ANSI Art for the Masses",
+        "description" => <<<DESC
+Back before there was the Internet, early caveman dialed into computer bulletin board systems or BBSes to get their online fix. Many of these boards distinguished themselves with ANSI art, an early form of electronic cave paintings. ANSI was an extension to the even earlier form of caveman communication known as ASCII used in MS-DOS based computers. It is with great pleasure that we happened upon the San Francisco hacker art gallery "20 goto 10″ where an ANSI art exhibition was in progress. Irina Slutsky talks to curator Kevin Olson who takes us on a tour of some of the amazing early work of two ANSI artists, lordjazz and somms.
+
+Originally posted:\nhttp://www.geekentertainment.tv/2008/...
+DESC,
+        "viewCount" => 55585,
+        "date" => "Feb 9 2008",
+    ];
+
+
     public function testSearch()
     {
         $ts = new TubeStrip();
@@ -36,7 +48,7 @@ DESC,
 
         $ts = new TubeStrip();
         $result = $ts->get(self::ID);
-        $this->assertEquals($result, (object) self::GET_RESULT);
+        $this->assertEquals($result, (object) self::GET_RESULT_HTML);
 
     }
     public function testSearchJson()
