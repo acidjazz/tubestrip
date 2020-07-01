@@ -27,12 +27,19 @@ composer require acidjazz/tubestrip
 
 ```php
 <?php
-
-namespace App\Http\Controllers;
-
 use acidjazz\tubestrip\TubeStrip;
 
 $ts = new TubeStrip();
-$results = $ts->search('this is a test');
+$results = $ts->search('GETV ANSI Show');
+dump($results);
+```
+
+```
+array:20 [▼
+  0 => {#3768 ▼
+    +"id": "r_cYOi3pnhA"
+    +"title": "GETV: ANSI Art for the Masses"
+  }
+...
 ```
 
