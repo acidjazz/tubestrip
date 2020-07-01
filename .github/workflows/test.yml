@@ -1,7 +1,7 @@
 name: Test
 on:
   push:
-    branches-ignore: [ staging ]
+    branches: [ master ]
 jobs:
   test:
     runs-on: ubuntu-latest
