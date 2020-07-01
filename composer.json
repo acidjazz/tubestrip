@@ -1,0 +1,28 @@
+{
+    "name": "acidjazz/tubestrip",
+    "description": "YouTube Crawler",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Olson",
+            "email": "acidjazz@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/dom-crawler": "^5.1",
+        "ext-json": "*",
+        "php": "^7.4",
+        "illuminate/support": "^7.18",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.3",
+        "phpunit/phpunit": "^9.2"
+    }
+}
