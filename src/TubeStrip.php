@@ -123,14 +123,14 @@ class TubeStrip
      * @param string $term
      * @return array
      */
-    public function search(string $term): array
+    public function search(string $term, int $page = 1): array
     {
         $response = Http::withHeaders($this->forceJson ? [
             'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36',
         ] : [
             'User-Agent' => 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)',
         ])
-            ->get('https://www.youtube.com/results?search_query=' . urlencode($term));
+            ->get('https://www.youtube.com/results?page='.$page.'&search_query=' . urlencode($term));
         $html = $response->body();
         preg_match(self::JSON_REGEX, $html, $matches);
         if (isset($matches[0])) {

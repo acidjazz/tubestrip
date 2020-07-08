@@ -11,7 +11,6 @@ class TubeStripTest extends TestCase
         "id" => "r_cYOi3pnhA",
         "title" => "GETV: ANSI Art for the Masses",
     ];
-
     const ID = 'r_cYOi3pnhA';
     CONST GET_RESULT = [
       "title" => "GETV: ANSI Art for the Masses",
@@ -20,7 +19,7 @@ Back before there was the Internet, early caveman dialed into computer bulletin 
 \r
 Originally posted:\r\nhttp://www.geekentertainment.tv/2008/...
 DESC,
-      "viewCount" => 55585,
+      "viewCount" => 55587,
       "date" => "Feb 9 2008",
     ];
 
@@ -31,7 +30,7 @@ Back before there was the Internet, early caveman dialed into computer bulletin 
 
 Originally posted:\nhttp://www.geekentertainment.tv/2008/...
 DESC,
-        "viewCount" => 55585,
+        "viewCount" => 55587,
         "date" => "Feb 9 2008",
     ];
 
@@ -57,7 +56,12 @@ DESC,
         $results = $ts->search(self::TERM);
         $this->assertEquals($results[0], (object) self::TERM_RESULT);
     }
-
+    public function testSearchJsonPageTwo()
+    {
+        $ts = new TubeStrip(true);
+        $results = $ts->search(self::TERM, 2);
+        $this->assertNotEquals($results[0], (object) self::TERM_RESULT);
+    }
     public function testGetJson()
     {
         $ts = new TubeStrip(true);
